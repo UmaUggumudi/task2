@@ -1,0 +1,129 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffcc00;
+    color: #fff;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+/* Navigation styles */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #ff9900;
+    padding: 10px 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Section styles */
+.about-section, .product-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+/* Product container styles */
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 150px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product h3 {
+    margin: 10px 0;
+}
+
+/* Footer styles */
+.footer {
+    text-align: center;
+    background-color: #ff9900;
+    padding: 10px;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Responsive Design - Media Queries */
+
+/* Small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+    .product-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .product {
+        max-width: 100%;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+    }
+}
+
+/* Medium devices (tablets, 601px to 960px) */
+@media screen and (max-width: 960px) {
+    .product-container {
+        gap: 15px;
+    }
+    
+    .product {
+        max-width: 100%;
+    }
+    
+    .navbar {
+        flex-direction: row;
+        justify-content: center;
+    }
+  }
